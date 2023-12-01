@@ -3,5 +3,30 @@
 {% block title %}Sign-Up Page{% endblock %}
 
 {% block content %}
-<h1>This is the Sign-Up Page</h1>
+
+<form method="POST">
+
+    <br>
+
+    <h3 align="center">Sign Up</h3>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email...">
+
+        <label for="firstNname">First Name</label>
+        <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name...">
+
+        <label for="password1">Password</label>
+        <input type="password" name="password1" id="password1" class="form-control" placeholder="***********">
+
+        <label for="password2">Password (Confirm)</label>
+        <input type="password" name="password2" id="password2" class="form-control" placeholder="***********">
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
 {% endblock %}

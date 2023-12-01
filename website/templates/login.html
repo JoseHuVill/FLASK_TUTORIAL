@@ -3,5 +3,24 @@
 {% block title %}Login Page{% endblock %}
 
 {% block content %}
-<h1>This is the Login Page</h1>
+
+<form method="POST">
+
+    <br>
+
+    <h3 align="center">Login</h3>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email...">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="***********">
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+</form>
+
 {% endblock %}
